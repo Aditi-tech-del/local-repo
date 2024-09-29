@@ -56,7 +56,7 @@ def check_prices_and_notify():
             else:
                 print(f"No price found for product: {product_name}")
 
-# Add the job to run daily at 2:18 AM
+# Add the job to run daily at 2:23AM
 scheduler.add_job(check_prices_and_notify, 'cron', hour=2, minute=23, timezone=tz)
 
 # Start the scheduler
